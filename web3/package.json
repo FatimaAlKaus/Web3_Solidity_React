@@ -36,6 +36,10 @@
     "test": "npx hardhat coverage",
     "compile": "npx hardhat compile",
     "build": "npx hardhat clean && npx hardhat compile",
-    "clean": "npx hardhat clean"
+    "clean": "npx hardhat clean",
+    "deploy": "npx hardhat run scripts/deploy.ts && npx hardhat node"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0"
   }
 }
